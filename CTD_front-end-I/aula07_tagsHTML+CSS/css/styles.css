@@ -1,0 +1,47 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+/* o asterisco indica que deve estar em todo o site */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: honeydew;
+
+}
+/* também posso indicar com 'body' pra que fique mais claro onde quero que a estilização se aplique */
+
+
+header h1 {
+    color: indianred;
+    font-size: 3rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px, 10px;
+}
+
+h2 {
+ color: indianred;
+ font-family: Helvetica, sans-serif;
+ font-weight: lighter;
+ line-height: 2em;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    color: grey;
+}
+
+.fundo-azul {
+    background-color: lightblue;
+    border-radius: 15px;
+}
+
+.fundo-amarelo {
+    background-color: lightgoldenrodyellow;
+}

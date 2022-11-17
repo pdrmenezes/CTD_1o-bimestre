@@ -1,0 +1,93 @@
+/* Estrutura do box-model de dentro pra fora: content-padding-border-margin */
+
+/* 
+    width: se um elemento não tiver a propriedade width declarada, a largura será 100% da largura do conteiner pai, desde que ele seja um elemento de bloco.
+
+    podemos, inicialmente, atribuir valor à width usando (px) ou (%)
+
+    ex no css:
+
+    div {
+        width: 120px;
+    }
+*/
+
+
+/* 
+    height: se um elemento não tiver a propriedade height declarada, a altura será igual à altura do seu conteúdo, seja ele um elemento de bloco ou inline.
+
+    podemos, inicialmente, atribuir valor à width usando (px) ou (%). para altura, recomenda-se usar porcentagem.
+
+    ex no css:
+
+    div {
+        height: 80%;
+    }
+*/
+
+/* 
+    padding: é a margem interna, que fica entre o conteúdo e a borda do container.
+
+    podemos, inicialmente, atribuir valor ao padding usando (px) indicando 1 valor pros 4 lados:
+    div { padding: 12px; }
+
+    2 valores: 1º: top e bottom || 2º: left e right:
+    div { padding: 12px 20px; }
+
+    3 valores: 1º: top || 2º: left e right || 3º: bottom:
+    div { padding: 12px 20px 18px; }
+
+    4 valores, em sentido horário começando de cima: 1º: top || 2º: right || 3º: bottom || 4º: left:
+    div { padding: 1px 2px 3px 4px; }
+*/
+
+/* 
+    border: é a borda que fica entre o conteúdo e a margem externa.
+
+    os valores de espessura podem ser atribuidos em 1, 2, 3 ou 4 valores como no padding.
+
+    para atribuir um valor, definimos 3 critérios:
+    
+    - estilo: solid, dotted, dashed ou double
+    - stroke (pode ser qualquer unidade de medida do CSS): 3px
+    - cor (de qualquer forma): rgb, hsl, hexa
+    
+    div { border: solid 3px red; }
+*/
+
+
+/* 
+    margin: é a margem exterior, serve pra separar um elemento do outro.
+
+    a espessura pode ser definida em 1, 2, 3 ou 4 valores como no padding e no border:
+
+    inicialmente, usamos (px)
+    div { margin: 15px; }
+    div { margin: 15px, 20px; }
+    div { margin: 15px, 20px, 30px; }
+    div { margin: 15px, 20px, 30px, 40px; }
+*/
+
+/* 
+    box-sizing: é a propriedade que ajuda a calcular todas as medidas anteriores juntas.
+
+    por padrão, o seu valor é 'content-box'
+
+    se usarmos 'border-box' como parâmetro do 'box-sizing', altura e largura que indicarmos abrangerá conteúdo, padding e borda do elemento, deixando de fora apenas a margem
+
+    div {
+        width: 150px;
+        height: 130px;
+        padding: 12px;
+        border: solid 3px yellow;
+        margin: 15px;
+        box-sizing: border-box;
+    }
+largura total: 180px
+
+é prática comum aplicar 'box-sizing: border-box' em todo o site usando
+
+* {
+    box-sizing: border-box;
+}
+*/

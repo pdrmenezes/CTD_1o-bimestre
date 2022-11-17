@@ -1,0 +1,14 @@
+#banner {
+    background-image: url(../img/bg.jpeg);
+    height: calc(100vh - 56px);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.card-game img {
+    height: 21.875rem;
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}

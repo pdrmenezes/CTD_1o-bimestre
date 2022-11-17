@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 15px;
+}
+
+header h1::first-letter {
+  color: red;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header li a {
+  text-decoration: none;
+  color: bisque;
+  padding: 10px 30px;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover{
+  background-color: red;
+  color: black;
+}
+
+main {
+  padding: 15px 60px;
+
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 10px;
+  text-align: center;
+}
+
+.card-game img {
+  height: 350px;
+  width: 100%;
+  border: 1px solid solid lightcoral;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+.image-container {
+  height: 350px;
+  width: 100%;
+  border: 10px solid  lightcoral;
+  overflow: hidden;
+}
+
+.card-game img:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: coral;
+  color: #333;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-left: 4px;
+}
+
+ul li a {
+  padding: 10px;
+}
+
+header li a:hover{
+  background-color: red;
+  color: black;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+#rpg + #rts {
+  margin-top: 60px;
+}

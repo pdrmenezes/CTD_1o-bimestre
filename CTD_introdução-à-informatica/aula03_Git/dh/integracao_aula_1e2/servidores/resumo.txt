@@ -1,0 +1,1 @@
+Servidores podem ser, de forma simplista, definidos como os grandes computadores com alta capacidade computacional que armazenam dados, executam tarefas, rodam programas, geram respostas às solicitações feitas pelos clientes e, ainda, se comunicam com outros servidores.

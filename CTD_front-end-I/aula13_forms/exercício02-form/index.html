@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Formulários</title>
+</head>
+
+<body>
+    <section>
+        <h1>Form example 1</h1>
+    </section>
+    <section id="form1">
+        <!-- a tag <for> possui 2 atributos: action e method
+            action: define a rota que os dados são processados
+            method: define como serão processados os dados do form (qual o método), GET ou POST -->
+        <form action="/registro" method="POST">
+            <input type="text" name="nome">
+            <!-- a tag 'input' vinculada a um atributo altera o valor a ser recebido pelo campo do formulário. as tags input não precisam ser fechadas  -->
+            <input type="email" name="e-mail">
+            <!-- a tag 'name' identifica o campo pro envio das informações e sem ela, os dados coletados não serão enviados -->
+            <input type="password" name="senha">
+        </form>
+    </section>
+    <section id="form2">
+        <h1>Form example 2</h1>
+        <form action="/registro" method="POST">
+            <p><label for="nome"> Nome: </label>
+            <!-- a tag <label> atribui um texto descritivo ao campo. associe a tag <label> a um campo inserindo no 'for' do label, o id correspondente do 'input' -->
+            <input type="text" name="nome" id="nome"></p>
+            <p><label for="email">Seu e-mail: </label>
+            <!-- dentro da tag <label> vai o texto que queremos mostrar. quando vinculada ao id do input, se o usuário clicar no label, o campo input a ele associado se ativará -->
+            <input type="email" name="e-mail" id="email"></p>
+            <p><label for="comentarios">Deixe o seu comentário: </label></p>
+            <!-- as tags <p> foram usadas pra deixar cada campo em uma linha -->
+            <p><textarea name="comentario" id="comentario" cols="30" rows="10">Texto descritivo do campo</textarea></p>
+            <!-- a tag <textarea> serve para a inserção de textos mais longos que a <input>, como campos de comentários -->
+        </form>
+    </section>
+    <section id="form3">
+        <h1>Form example 3</h1>
+        <form action="/colors" method="GET">
+            <label for="colors">Escolha uma cor: </label>
+            <select name="colors" id="colors">
+                <!-- a tag <select> abre um dropdown com opções para usuário e também precisa do parâmetro 'name' pra enviar as informações -->
+                <option value="ff0000"> Red</option>
+                <!-- as opções da tag <select> são criadas com a tag <option> que têm abertura e fechamento. 'value' é o valor que será enviado ao formulário.  -->
+                <option value="00ff00">Green</option>
+                <option value="0000ff">Blue</option>
+                <option value="770077" selected>Purple</option>
+                <!-- o atributo 'selected' da tag <option> é opcional e deixa uma das opções pré-selecionadas por padrão -->
+            </select>
+        </form>
+    </section>
+    <section id="form4">
+        <h1>Form example 4</h1>
+        <form action="" method="">
+            <label for="user">Your username: </label>
+            <input type="text" name="user" id="user">
+            <button type="submit">Send</button>
+            <!-- a tag <button> permite criar um botão e com a propriedade 'type' definimos o seu tipo:
+                'reset': reinicia o formulário ao seu estado inicial (cancelar ou apagar tudo)
+                'submit': envia os dados do formulário
+                'button': nõa realiza ação nenhuma, então pode ser configurado no JS -->
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</body>
+
+</html>

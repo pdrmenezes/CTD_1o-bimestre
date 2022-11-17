@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(236, 22, 49);
+    color: white;
+}
+
+main {
+    text-align: center;
+}
+
+.container {
+    padding: 0 35%;
+}
+
+main img {
+    width: 100px;
+}
+
+label, select {
+    display: block;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+}
+
+select {
+    margin: 0px auto 15px;
+}
+
+.metodo-pagamento label, .opcionais label {
+    display: inline-block;
+}
+
+label{
+    margin: 0px 15px 0 0;
+}
+
+button {
+    margin-top: 5% 0;
+
+}

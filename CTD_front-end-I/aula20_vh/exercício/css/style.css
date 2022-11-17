@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 1.25em;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 1.9em;
+    margin: 15px;
+}
+
+header h1::first-letter {
+    color: red;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: bisque;
+    padding: 10px 30px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+header li a:hover {
+    background-color: red;
+    color: black;
+}
+
+@media(max-width: 492px) {
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        margin-bottom: 15px;
+    }
+    header li {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 343px) {
+    header li a {
+        padding: 5px;
+    }
+    main {
+        padding: 15px 30px;
+    }
+}
+
+#banner {
+    background-image: url(../img/issd.jpeg);
+    height: calc(100vh -106px);
+    background-size: cover;
+    width: 100vw;
+}
+
+main {
+    padding: 15px 60px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media(min-width: 786px) and (max-width: 1065px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 785px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-game img {
+    height: 350px;
+    width: 100%;
+    border: 1px solid solid lightcoral;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+.image-container {
+    height: 350px;
+    width: 100%;
+    border: 10px solid lightcoral;
+    overflow: hidden;
+}
+
+.card-game img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 90px;
+    font-weight: bold;
+    border-radius: 9px;
+    border: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: coral;
+    color: #333;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin-left: 4px;
+}
+
+ul li a {
+    padding: 10px;
+}
+
+header li a:hover {
+    background-color: red;
+    color: black;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+#rpg+#rts {
+    margin-top: 60px;
+}

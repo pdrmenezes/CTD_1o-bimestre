@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Source+Code+Pro:wght@300;400;600;700&display=swap');
+
+/* font-family: 'Francois One', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+}
+
+main {
+    background-image: url(../img/pedro_bsb.jpg);
+    background-size: cover;
+    height: calc(100vh - 52px);
+    background-repeat: no-repeat;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+}
+
+ul.nav {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px 15px 15px;
+    text-decoration: none;
+}
+
+li a#menu:hover {
+    background-color: #111;
+}
+
+.item1+h2:link {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.title {
+    height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3em;
+    padding: 0 1em;
+    text-align: left;
+    color: #333;
+    -webkit-text-stroke: .5px white;
+}
+
+.list {
+    background-color: thistle;
+    height: fit-content;
+}
+
+.grid-container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: .8em 2em;
+    margin: 3em auto;
+    padding: 2em 0;
+    background-color: tomato;
+}
+
+.grid-item {
+    border: solid 1px thistle;
+    margin: .5em 1em;
+    padding: .5em 2em;
+    text-align: center;
+    background-color: teal;
+}
+
+.column1 {
+    margin-left: 2em;
+    text-align: right;
+}
+
+.column2 {
+    margin-right: 2em;
+    text-align: left;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item2 {}
+
+.item3 {}

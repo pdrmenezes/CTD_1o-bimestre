@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML</title>
+</head>
+<body>
+<!-- listas desordenadas/desorganizadas (unorganized) com <ul>-->
+<!-- cada item da lista vai com a tag <li>-->
+<ul>
+    <li>banana</li>
+    <li>laranja</li>
+    <li>maçã</li>
+</ul>
+
+<!-- listas ordenadas com <ol>-->
+<ol>
+    <li>banana</li>
+    <li>laranja</li>
+    <li>maçã</li>
+</ol>
+
+<!-- listas ordenadas com <ol> alterando o atributo/tipo de ordenação usando 'type'-->
+<ol type="a">
+    <li>banana</li>
+    <li>laranja</li>
+    <li>maçã</li>
+</ol>
+
+<ol type="A">
+    <li>banana</li>
+    <li>laranja</li>
+    <li>maçã</li>
+</ol>
+
+<ol type="i">
+    <li>banana</li>
+    <li>laranja</li>
+    <li>maçã</li>
+</ol>
+
+<ol type="I">
+    <li>banana</li>
+    <li>laranja</li>
+    <li>maçã</li>
+</ol>
+
+<!-- títulos organizados por hierarquia até o 6º nível de <h1> a <h6>-->
+<h1>Oi</h1>
+<h2>Subtítulo</h2>
+<h3>Subtítulo</h3>
+<h4>Subtítulo</h4>
+<h5>Subtítulo</h5>
+<h6>Subtítulo</h6>
+
+<!-- parágrafos com 'p'-->
+<p>parágrafo comum (:</p>
+
+<!-- citações com <q> pra citações pequenas ou <blockquote> pra citações maiores-->
+<p><q>Eu não manjo nada – Sócrates</q></p>
+
+<blockquote><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sint quae labore voluptatem et excepturi tempore repudiandae ad culpa debitis.</p></blockquote>  
+
+<!-- direcionando as citações pra algum link com o atributo 'cite'-->
+<q cite="https://www.google.com">só sei que não sei nada, irmão – Sócrates</q>
+
+<blockquote cite="https://www.google.com">aqui vai uma grande citação sobre a vida e sobre a morte de parágrafos: eles podem, de repente, sem nenhum aviso, simplesmen</blockquote>
+
+<!-- utilizando imagens com <img> e 'src', a tag define que é uma imagem, e o atributo indica a origem do arquivo -->
+<img src="https://images.unsplash.com/photo-1629049222296-46ac9a12363e?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="natureza">
+
+<!-- criando hiperlinks com <a> e 'href'-->
+    <p><a href="www.unsplash.com">Site com as melhores fotos gratuitas.</a></p>
+
+<!-- referenciando arquivos locais usando <img href=> importante lembrar que sempre partimos a partir da pasta em que está o arquivo html ou o index.html e que temos que incluir a extensão do arquivo -->
+
+<!-- cenário 1: mídia na mesma pasta do html-->
+<img href="brocolis.jpeg" alt="brocolis">
+
+<!-- cenário 2 MAIS COMUM: mídia numa pasta 'img' na mesma pasta do html-->
+<img href="img/brocolis.jpeg" alt="brocolis">
+
+<!-- cenário 3 FREQUENTE COM MUITAS PAGINAS HTML: mídia na pasta 'img' fora da pasta do html o '../' indica que temos que voltar 1 nível na hierarquia de pastas e só então entrar na pasta 'img'-->
+<img href="../img/brocolis.jpeg" alt="brocolis">
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* z-index */
+
+/* é como se fosse a ordem de camadas do photoshop. nos permite dizer sobre ou sob que elemento ele será posicionado */
+
+/* só podemos atribuir valor de z-index pra elementos com 'position: absolute, relative ou fixed'
+    
+    qualquer elemento com atributo de posicionamento válido terá 'z-index: 0' por padrão
+
+    .caixa-1 {
+        position: relative;
+        left: 100px;
+        top: 50px;
+    }
+    .caixa-2 {
+        position: relative
+        z-index: 10;
+    }
+
+    com 3 caixas sobrepostas, se atribuirmos à caixa-2 o index superior ao do elemento que a sobrepõe (caixa-1), a caixa-2 se sobreporá à caixa-1
+*/

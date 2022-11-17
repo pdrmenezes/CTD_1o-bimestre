@@ -1,0 +1,70 @@
+/* position - relative - absolute */
+
+/* pontos de referência de posicionamento, também funcionam em ordem horária, começando de cima: top - right - bottom - left */
+
+/* usando os pontos de referência como direção podemos mover o elemento, com valores positivos ou negativos. 
+    ex: div { position: left 50px; } move o elemento 50px à direita a partir do seu lado esquerdo
+    ex: div { position: left -50px; } move o elemento 50px à esquerda a partir do seu lado esquerdo */
+
+/* 'position: relative' nos permite mover um elemento desde a sua posição inicial até outra utilizando seus limites (boundaries) como referência
+    
+    ao atribuir ':relative' a um elemento, o espaço ocupado pela sua posição original, mesmo que vazio, é preservado. isso quer dizer que os elementos contíguos não serão afetados
+    caixa-1 {
+        position: relative;
+        left: 100px;
+        top: 50px;
+    }
+    se houvessem duas caixas iguais sobrepostas, a caixa 1 se moveria para a direita 100px e para baixo 50px, cobrindo parte da caixa 2
+
+    utilizamos o 'position: relative' quando desejamos mudar a posição de um elemento sem alterar a dinâmica dos demais ao seu redor. */
+
+/* 'position: absolute' nos permite alterar a posição de elementos tomando os limites do <body> como referência
+    
+    ao alterar o posicionamento ':absolute' de um elemento, o espaço que ele ocupava fica vazio, dando espaço a outros elementos
+    caixa-2 {
+        position: absolute;
+        right: 100px;
+        bottom: 50px;
+    }
+    se houvessem três caixas iguais sobrepostas, a caixa 2 ficaria distante 100px da margem direita do body, 50px distante da margem inferior do body e a caixa 3 subiria e ocuparia o espaço da caixa 2 */
+
+/* position: absolute + position: relative
+    se as caixas filhas estiverem dentro da caixa pai os pontos de referência ainda serão os limites do body, a menos que a caixa pai tenha 'position: relative'
+    div { position: relative }
+
+    .caixa-2 {
+        position: absolute;
+        right: 100px;
+        top: 50px;
+    }
+    se houvessem 3 caixas iguais sobrepostas, a caixa 2 seria posicionada a 100px da borda direita da div pai, 50px da borda superior da div pai e a caixa 3 ocuparia o lugar da caixa 2
+
+    utilizamos quando queremos alterar a posição de um elemento específico e deixá-lo fixo respeitando a caixa que o contém */
+
+/* position: absolute + position: relative
+    se as caixas filhas estiverem dentro da caixa pai os pontos de referência ainda serão os limites do body, a menos que a caixa pai tenha 'position: relative'
+    div { position: relative }
+
+    .caixa-2 {
+        position: absolute;
+        right: 100px;
+        top: 50px;
+    }
+    se houvessem 3 caixas iguais sobrepostas, a caixa 2 seria posicionada a 100px da borda direita da div pai, 50px da borda superior da div pai e a caixa 3 ocuparia o lugar da caixa 2
+
+    utilizamos quando queremos alterar a posição de um elemento específico e deixá-lo fixo respeitando a caixa que o contém
+    */
+
+/* position: fixed
+    nos permite posicionar um elemento tendo como referência a janela do navegador
+    .botaoCriar {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+    }
+
+    mesmo que desçamos com o scroll, o elemento se manté fixo na posição (ex: wix)
+
+    utilizamos quando queremos manter um elemento fixo em uma posição na página independente da rolagem, o elemento sempre será visto
+    
+*/

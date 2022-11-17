@@ -1,0 +1,87 @@
+<!-- Mesa 3: Alexandre Pedro, Arnaldo Ramos, Nayla Ueda, Denny Ribeiro, Pedro Menezes -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Doces</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+    <img class="logo" src="./img/meridianos.webp" alt="logo planta">
+  <h1><span>TÍtulo</span> <br>com pseudoelements</h1>
+  <h3><a href="https://www.anamariabrogui.com.br/receita/coxinha-vegana-426259">Fornecedor xispirêutico</a></h3>
+  <h4><a href="https://www.uva.br">UVA</a></h4>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" disabled>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Pedido</legend>
+            <label for="nome">Doce: </label>
+            <select name="doce" id="doce">
+                <option value="">Selecione o seu doce</option>
+                <optgroup label="Bolo:">
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Cenoura">Cenoura</option>
+                    <option value="Laranja">Laranja</option>
+                    <option value="Limão">Limão</option>
+                </optgroup>
+                <optgroup label="Balas:">
+                    <option value="Goma">Goma</option>
+                    <option value="Caramelo">Caramelo</option>
+                    <option value="Pastilha">Pastilha</option>
+                    <option value="Hortelã">Hortelã</option>
+                </optgroup>
+                <optgroup label="Sorvete:">
+                    <option value="Flocos">Flocos</option>
+                    <option value="Napolitano">Napolitano</option>
+                    <option value="Uva">Uva</option>
+                    <option value="Pistache">Pistache</option>
+                </optgroup>
+            </select>
+            <label for="observacoes">Observações: </label>
+            <textarea placeholder="Texto lindo perfeito" name="observacoes" id="observacoes" cols="22" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Humor</legend>
+            <div class="humor">
+                <input type="checkbox" name="humor" id="humor" checked>
+                <label for="humor">😀</label>
+                <input type="checkbox" name="humor" id="humor">
+                <label for="humor">😃</label>
+                <input type="checkbox" name="humor" id="humor">
+                <label for="humor">😁</label>
+            </div>
+        </fieldset>
+            <fieldset>
+            <label for="data_chegada">Agendar pedido:</label>
+            <input type="date" name="data_chegada" id="data_chegada">
+        </fieldset>
+        <fieldset>
+            <legend>Pagamento</legend>
+            <div class="pagamento">
+                <label for="">Tipo:</label>
+                <input type="radio" name="pagamento" id="dinheiro" checked>
+                <label for="dinheiro"><img src="./img/visa-pay.png" alt="pagamento com visa pay"></label>
+                <input type="radio" name="pagamento" id="cartao">
+                <label for="cartao"><img src="./img/apple-pay.png" alt="pagamento com apple pay"></label>
+                <input type="radio" name="pagamento" id="pix">
+                <label for="pix"><img src="./img/google-pay.png" alt="pagamento com google pay"></label>
+            </div>
+            <label for="data_chegada">Agendar pedido:</label>
+            <input type="date" name="data_chegada" id="data_chegada">
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</main>
+</body>
+
+</html>

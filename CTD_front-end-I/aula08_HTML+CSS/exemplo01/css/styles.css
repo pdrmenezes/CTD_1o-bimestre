@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#banner {
+  background-image: url(../img/53670012.jpg);
+  background-position: top;
+  height: 500px;
+}
+
+#banner-text {
+  background-color: honeydew;
+  display: inline-block;
+  padding: 1em;
+}

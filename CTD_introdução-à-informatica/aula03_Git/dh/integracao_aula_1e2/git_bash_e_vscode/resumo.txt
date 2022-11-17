@@ -1,0 +1,1 @@
+Tanto o gitbash quando o vscode podem ser usados pra gerir versionamento de código usando git. O VScode é uma IDE completa, com recurssos de debugger, compilação, etc., enquanto o gitbash é um terminal que permite execução de comandos (não só)

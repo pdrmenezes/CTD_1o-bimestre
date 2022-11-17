@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+  text-align: center;
+  background-image: url(../img/stage.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat:no-repeat; 
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+  display: inline-block;
+  color: aliceblue;
+  font-size: 1.4em;
+  opacity: 70%;
+}
+
+#ghost {
+  width: 50px;
+  animation: ghostAnimation 9s ease infinite;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+@keyframes ghostAnimation {
+    0% {
+        transform: translateX(-60vh);
+        opacity: 0%;
+    }
+    30% {
+        transform: skewX(180deg) translateX(10vh) scaleX(-1);
+        opacity: 50%;
+    }
+    60% {
+      transform: translateX(-20vh);
+    }
+    70% {
+      opacity: 100%;
+    }
+    100% {
+        transform: scale(1.1) skew(0deg) translateX(30vh);
+        opacity: 50%
+    }
+}
+
+button {
+  position: relative;
+  bottom: -100px;
+  right: -200px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: honeydew;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  transition: ease-in-out 1s;
+}
+
+button:hover {
+  background-color: indianred;
+  color: honeydew;
+  border: none;
+}

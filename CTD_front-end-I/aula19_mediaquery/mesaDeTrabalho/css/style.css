@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Source+Code+Pro:wght@300;400;600;700&display=swap');
+
+/* font-family: 'Francois One', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/pedro_bsb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+}
+
+ul.nav {
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px 15px 15px;
+    text-decoration: none;
+}
+
+li a#menu:hover {
+    background-color: #111;
+}
+
+main {
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(224, 206, 196);
+}
+
+main h1 {
+    padding-top: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(51, 51, 51, 0.6);
+}
+
+main h3 {
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(51, 51, 51, 0.6)
+}
+
+main h4 {
+    text-align: center;
+    padding: 0 50px 50px;
+    line-height: 1.5em;
+}
+
+section#curiosidades {
+    margin: 50px;
+    padding: 50px;
+    background-color: rgba(51, 51, 51, 0.6);
+    position: relative;
+    bottom: 0px;
+    border-radius: 0.5em;
+}
+
+.video {
+    text-align: center;
+    margin: auto;
+}
+
+@media(max-width:1280px) {
+    .video {
+        transform: scale(.8);
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media(max-width:1150px) {
+    .video {
+        transform: scale(.5);
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.icon-bar {
+    margin-left: 15px;
+    width: 50px;
+    position: fixed;
+    top: 50vh;
+    z-index: 1;
+}
+
+@media(max-width: 495px) {
+    .icon-bar {
+        display: none;
+    }
+}
+
+.icon-bar a {
+    text-align: center;
+    padding: 10px;
+    font-size: 38px;
+    line-height: 2.2em;
+}
+
+.icon-bar a:hover {
+    background-color: aliceblue;
+}
+
+.icon-bar img {
+    width: 40px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+}

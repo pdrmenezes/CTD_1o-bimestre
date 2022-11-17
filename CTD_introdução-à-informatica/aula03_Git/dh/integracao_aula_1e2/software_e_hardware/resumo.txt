@@ -1,0 +1,3 @@
+Software, como sugerido pelo nome, não é algo duro, físico, é o resultado de, normalmente, muitas linhas de programaçã, que pode ser de diversos tipos (sistema, programação e aplicação).
+
+Já o hardware, é a parte física dos computadores e podem ser divididos entre hardware de entrada, de saída e internos. Todos eles são componentes importantes ao funcionamento e à interação ser humano-máquina

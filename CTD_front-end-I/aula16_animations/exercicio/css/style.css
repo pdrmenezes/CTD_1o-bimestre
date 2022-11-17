@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color:khaki;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    animation: mainAnimation 4s 1;
+}
+
+@keyframes mainAnimation {
+    from{
+        transform: scale(0) translateX(-100%) translateY(-100%) rotate(1080deg);
+    }
+    to{
+        transform: scale(1) translateX(0) translateY(0) rotate(0);
+    }
+}
+
+/* 
+usando porcentagem: 
+
+@keyframes mainAnimation {
+    0%{
+        transform: scale(0) translateX(-100%) translateY(-100%) rotate(1080deg);
+    }
+    50%{
+        transform: scale(1) translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+        transform: scale(0) translateX(-100%) translateY(-100%) rotate(1080deg);
+
+}
+*/
+
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    color: tomato;
+    mix-blend-mode:soft-light;
+    animation: logoRotate 4s infinite;
+}
+/* alguns filtros no css têm o valor padrão 1, ou 100%. e você pode, ao invés de escrever 0%, 100%, 200%, escrever 0, 1 ou 2  */
+
+@keyframes logoRotate {
+    0%{
+        transform: rotate(360deg) scale(0.9) skew(10deg);
+    }
+    50%{
+        transform: rotate(180deg) scale(1);
+    }
+    100% {
+        transform: rotate(540deg) scale(1.1) skew(0deg);
+
+    }
+    
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, select {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+input, textarea {
+    border-radius: 4px;
+    border-style: none;
+    height: 30px;
+    width: 250px;
+}
+
+textarea {
+    height: 80px;
+    width: 250px;
+}
+
+select {
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    border-style: none;
+    height: 30px;
+    width: 250px;
+}
+button {
+    margin: 30px 10px;
+    width: 115px;
+    height: 25px;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: tomato;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px teal;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: teal;
+    box-shadow: 4px 4px 10px teal;
+}
+
+.pagamento {
+    margin: 20px;
+}
+
+.pagamento label {
+    display: inline-block;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.pagamento input {
+    width: 20px;   
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.pagamento img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+fieldset {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-color: rgb(174,200,158);
+}
+
+#data_chegada {
+    text-align: center;
+}
+
+input[type="email"]{
+    background-color: aquamarine;
+    transition: all .4s ease-in-out;
+}
+
+input[type="email"]:hover{
+    background-color: teal;
+}
+
+input[type="email"]:focus{
+    background-color: black;
+    color: white;
+}
+
+input[name="nome"]:disabled{ 
+    background-color: grey;
+}
+/* inserir disabled no html pra visualizar esse modo */
+
+input[type="radio"]{
+    width: 20px;
+}
+
+/* elemento no html existe mas não pode ser selecionado */
+h1::after{
+    content: ' +elemento::after';
+}
+
+/* before e after funcionam como concatenação de strings. o ::before funciona como se fose 'before + h1" e o after funciona como se fosse "h1 + after". um insere à direita e outro insere à esquerda */
+
+h1::first-letter {
+    color: teal;
+}
+
+h1 span {
+    color: tomato;
+}
+
+fieldset:nth-child(1){
+    background-color: coral;
+}
+
+fieldset:nth-child(2){
+    background-color: pink;
+}
+
+fieldset:last-of-type{
+    background-color: coral;
+}
+
+.humor label {
+    display:inline-block;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+h1::first-line{
+    text-shadow: 4px 4px 15px darkgoldenrod;
+}
+
+textarea[name="observacoes"]::selection{
+    background-color: thistle;
+    cursor: cell;
+}
+
+a::before {
+    content: ' site: ';
+    color: tomato;
+}
+
+a:visited {
+    color:darkgoldenrod;
+}
+
+a:link {
+    color: tomato;
+}
+
+textarea::placeholder {
+    color: cornflowerblue;
+    font-size: 1.2em;
+}
